@@ -1,46 +1,80 @@
-body {
-    font-family: Arial, sans-serif;
+/* Basic reset */
+* {
     margin: 0;
     padding: 0;
-    line-height: 1.6;
+    box-sizing: border-box;
+}
+
+/* 80's Computer Style */
+body {
+    background-color: black;
+    color: #00ff00; /* Green text */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px; /* Adjust the size as needed */
+    line-height: 1.5;
+    padding: 20px;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 1em 0;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-header nav ul {
-    list-style: none;
-    padding: 0;
+h1, h2, h3 {
+    text-transform: uppercase;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: #fff;
+a {
+    color: #00ff00;
     text-decoration: none;
 }
 
-main {
-    padding: 1em;
+a:hover {
+    text-decoration: underline;
 }
 
-main section {
-    margin-bottom: 2em;
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    background-color: black;
+    color: #00ff00;
+    border: 1px solid #00ff00;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+button {
+    background-color: #00ff00;
+    color: black;
+    border: none;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: black;
+    color: #00ff00;
+    border: 1px solid #00ff00;
 }
 
 footer {
-    background: #333;
-    color: #fff;
     text-align: center;
-    padding: 1em 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 20px;
 }
+
